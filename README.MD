@@ -70,7 +70,18 @@ Test: http://<EC2_PUBLIC_IP>:3000
 in this case ```http://52.77.213.65:3000```
 
 ## set GitHub auto-deploy
-.github/workflows/deploy.yml
-File to create: .github/workflows/deploy.yml in your repo:
+choose ```setting``` in repo, then left navbar click ```Secuirty```. Choose ```Repository secrets``` <br>
+Add EC2_HOST ```52.77.213.65``` No http://, no port, no quotes, no trailing space/newline. <br>
+Add EC2_SSH_KEY 
+```  
+-----BEGIN RSA PRIVATE KEY-----
+   MIIEpAIBAAKCAQEA...
+   ...(many lines)...
+   -----END RSA PRIVATE KEY-----
+```
+<br>
+
+.github/workflows/deploy.yml <br>
+File to create: .github/workflows/deploy.yml in your repo: <br>
 
 #belum setup nginx from hide :3000
