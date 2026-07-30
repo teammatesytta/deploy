@@ -13,8 +13,11 @@ npm install express
 }
 ```
 <hr>
-# Launch the EC2 instance 
 <br>
+
+## Launch the EC2 instance 
+
+
 AWS Console → EC2 → Launch instance
 Ubuntu 22.04 (simplest for this guide)
 Instance type: t2.micro (free tier fine for testing)
@@ -26,6 +29,7 @@ Custom TCP (3000) in all wizard available
 <br>
 Careful: leaving port 22 open to the world is one of the most common EC2 security mistakes. Lock it to your IP.
 <br><br>
+<hr>
 
 ## to check available running project
 ```curl http://localhost:3000```
