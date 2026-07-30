@@ -18,14 +18,13 @@ npm install express
 ## Launch the EC2 instance 
 
 
-AWS Console → EC2 → Launch instance
-Ubuntu 22.04 (simplest for this guide)
-Instance type: t2.micro (free tier fine for testing)
-Key pair: create/download a .pem file — you need this to SSH in
-Security group: allow inbound
-SSH (22) — restrict to your IP, not 0.0.0.0/0
-HTTP (80) — 0.0.0.0/0
-Custom TCP (3000) in all wizard available
+AWS Console → EC2 → Launch instance <br>
+Ubuntu 22.04 (simplest for this guide) <br>
+Instance type: t2.micro (free tier fine for testing) <br>
+Key pair: create/download a .pem file — you need this to SSH in  Security group: allow inbound<br>
+SSH (22) — restrict to your IP, not 0.0.0.0/0<br>
+HTTP (80) — 0.0.0.0/0<br>
+Custom TCP (3000) in all wizard available<br>
 <br>
 Careful: leaving port 22 open to the world is one of the most common EC2 security mistakes. Lock it to your IP.
 <br><br>
