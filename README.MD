@@ -12,8 +12,9 @@ npm install express
   "start": "node index.js"
 }
 ```
-
-#Launch the EC2 instance
+<hr>
+# Launch the EC2 instance 
+<br>
 AWS Console → EC2 → Launch instance
 Ubuntu 22.04 (simplest for this guide)
 Instance type: t2.micro (free tier fine for testing)
@@ -22,8 +23,9 @@ Security group: allow inbound
 SSH (22) — restrict to your IP, not 0.0.0.0/0
 HTTP (80) — 0.0.0.0/0
 Custom TCP (3000) in all wizard available
-
+<br>
 Careful: leaving port 22 open to the world is one of the most common EC2 security mistakes. Lock it to your IP.
+<br><br>
 
 ## to check available running project
 ```curl http://localhost:3000```
@@ -52,12 +54,14 @@ sudo npm install -g pm2
 ```
 
 ### then 
+```
 git clone https://github.com/yourname/my-express-app.git
 cd my-express-app 
 npm install
 pm2 start index.js --name my-app
 pm2 save
 pm2 startup   # run the command it prints, so the app survives reboots
+```
 
 Test: http://<EC2_PUBLIC_IP>:3000
 in this case ```http://52.77.213.65:3000```
