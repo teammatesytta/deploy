@@ -70,7 +70,7 @@ Test: http://<EC2_PUBLIC_IP>:3000
 in this case ```http://52.77.213.65:3000```
 
 ## set GitHub auto-deploy
-choose ```setting``` in repo, then left navbar click ```Secuirty```. Choose ```Repository secrets``` <br>
+choose ```setting``` in repo, then left navbar click ```Secret and Variable```. Choose ```Repository secrets``` <br>
 Add EC2_HOST ```52.77.213.65``` No http://, no port, no quotes, no trailing space/newline. <br>
 Add EC2_SSH_KEY 
 ```  
